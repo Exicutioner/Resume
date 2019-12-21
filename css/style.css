@@ -1,0 +1,292 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+a, a:hover {
+    text-decoration: none;
+}
+body {
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: #222222;
+}
+header {
+    position: absolute;
+    width: 100%;
+    top: 20px;
+}
+h2 {
+    text-transform: uppercase;
+}
+img {
+    width: 100%;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "lato", sans-serif;
+    font-weight: 700;
+}
+@keyframes logo {
+    0% {color: rgb(43, 43, 237); text-shadow: 0 0 18px rgb(43, 43, 237)}
+    25% {color: rgba(43, 43, 237, 0.5); text-shadow: 0 0 18px rgba(43, 43, 237, 0.5)}
+    50% {color: rgba(255, 255, 255, 0.5); text-shadow: 0 0 18px rgba(255, 255, 255, 0.5)}
+    75% {color: rgb(255, 255, 255); text-shadow: 0 0 18px rgb(255, 255, 255)}
+    100% {color: rgba(43, 43, 237, 0.5); text-shadow: 0 0 18px rgba(43, 43, 237, 0.5)}
+}
+@keyframes team-skills {
+    0% {color: rgb(43, 43, 237); text-shadow: 0 0 18px rgb(43, 43, 237)}
+    25% {color: rgba(43, 43, 237, 0.5); text-shadow: 0 0 18px rgba(43, 43, 237, 0.5)}
+    50% {color: rgba(255, 255, 255, 0.5); text-shadow: 0 0 18px rgba(255, 255, 255, 0.5)}
+    75% {color: rgb(255, 255, 255); text-shadow: 0 0 18px rgb(255, 255, 255)}
+    100% {color: rgba(43, 43, 237, 0.5); text-shadow: 0 0 18px rgba(43, 43, 237, 0.5)}
+}
+/*############### Hero ###############*/
+#hero {
+    background: linear-gradient( rgba(1, 1, 1, 0.8), rgba(0, 0, 0, 0.5) ), url(../images/wall3.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+}
+.logo {
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    color: #ffffff;
+    animation: logo 8s alternate infinite linear;
+}
+.menu {
+    margin: 0;
+}
+.menu li a:hover {
+    content: "";
+    border-bottom: 2px solid #fcac45;
+    transition: 0.4s;
+
+}
+.menu-list-item a {
+    color: #fff;
+}
+.menu .menu-list-item {
+    display: inline-block;
+    font-size: 14px;
+    margin-left: 27px;
+    text-transform: uppercase;
+}
+.show span {
+    background: transparent;
+}
+.show span:before {
+    transform: translateY(0) rotate(-45deg);
+}
+.show span:after {
+    transform: translateY(0) rotate(45deg);
+}
+/*############### Hero ###############*/
+
+/*############### Team ###############*/
+#team {
+    background: linear-gradient( rgba(1, 1, 1, 0.8), rgba(0, 0, 0, 0.5) ), url(../images/wall3.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    color: #fff;
+    padding: 1px 0 150px;
+    text-align: center;
+}
+.team-item img {
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.fa-arrow-down {
+    color: #b2b2b2;
+}
+.team-skills
+.title {
+    margin-top: 105px;
+    position: relative;
+    font-size: 44px;
+    text-align: center;
+    font-weight: 300;
+}
+.title:before {
+    position: absolute;
+    content: "";
+    width: 100px;
+    height: 5px;
+    left: 0;
+    right: 0;
+    bottom: -20px;
+    margin: auto;
+    background-color: rgb(252,172,69);
+}
+.title:after {
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: -40px;
+    margin: auto;
+    content: "";
+    width: 65px;
+    height: 5px;
+    background: rgba(252,172,69, 0.5);
+}
+#team .title {
+    margin-bottom: 140px;
+}
+.title span {
+    font-weight: 600;
+}
+.team-member {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 20px;
+}
+.member-spec {
+    font-size: 16px;
+}
+.member-description {
+    font-size: 14px;
+    margin-top: 35px;
+}
+/*############### Team ###############*/
+/*############### Box ###############*/
+.box {
+    width: 100%;
+    margin-top: 250px;
+    background: #222222;
+    box-shadow: 0 0 18px #eeeeee;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+}
+.skills {
+    width: 700px;
+    height: 400px;
+    background: #4e555b;
+    margin: 50px 20px 20px 200px;
+
+}
+.team-skills {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    animation: logo 8s alternate infinite linear;
+    font-weight: 700;
+    font-size: 36px;
+}
+.box-skills {
+    position: relative;
+    bottom: -65px;
+}
+.about-title {
+    font-size: 34px;
+    font-weight: 300;
+    color: #ffffff;
+    padding: 10px 0 0 35px;
+    position: relative;
+    margin: 0;
+}
+.about-title span{
+    font-weight: 600;
+    color: #0062cc;
+}
+.about-title:before{
+    content: '';
+    position: absolute;
+    left: 35px;
+    right: 0;
+    bottom: -5px;
+    width: 410px;
+    height: 5px;
+    background-color: #0062cc;
+}
+.dot-img{
+    width: 12px;
+    height: 12px;
+}
+.about-description{
+    color: #eeeeee;
+    text-align: center;
+    align-items: center;
+    font-weight: 500;
+    font-size: 20px;
+    padding: 15px 20px 0 20px;
+}
+.description-list{
+    padding-bottom: 50px;
+}
+.about-link{
+    border: 1px solid #ffffff;
+    padding: 15px 30px;
+    border-radius: 2px;
+}
+.about-link img {
+    width: 15px;
+}
+/*############### Box ###############*/
+#clients{
+    background: linear-gradient( rgba(1, 1, 1, 0.8), rgba(0, 0, 0, 0.5) ), url(../images/wall3.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 1px 0 150px;
+    color: #ffffff;
+}
+.clients-img{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    list-style-type: none;
+    padding-top: 140px;
+    margin: 0;
+}
+/* ##################### clients ############################# */
+/* ##################### contact-us ############################# */
+#contact {
+    padding: 80px 0;
+}
+.contact-form label{
+    font-size: 14px;
+    margin-top: 30px;
+}
+.title2 span {
+    color: #222222;
+}
+#contact .form-control{
+    height: 40px;
+}
+.contact-description {
+    text-align: center;
+    font-style: italic;
+    margin: 75px 0 100px 0;
+}
+.send-btn{
+    border: none;
+    background: #fcac45;
+    font-size:16px;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 8px 62px;
+    float: right;
+    margin-top: 30px;
+}
+#contact label span{
+    color: red;
+}
+.form-control{
+    width: 100%;
+}
+#contact input .form-control{
+    height: 40px;
+}
+.contact-form .form-control{
+    border-radius: 0;
+}
