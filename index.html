@@ -1,21 +1,23 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <link href="https://fonts.googleapis.com/css?family=Dosis:400,500,600,700,800|Open+Sans:400,600,700,800&display=swap"
-          rel="stylesheet">
-    <link rel="stylesheet" href="./css/style.css">
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Dosis:400,500,600,700,800|Open+Sans:400,600,700,800&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="./css/animate.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/wow.js"></script>
 </head>
 <body>
 <div class="top-header">
     <div class="top-header-overlay"></div>
 </div>
 <main>
-    <section id="about-section" class="about-section">
+    <section id="about-section" class="about-section wow pulse">
         <div class="container">
             <div class="row white-block section-content shadow-block p50">
                 <div class="col-5">
@@ -61,7 +63,7 @@
             </div>
         </div>
     </section>
-    <section id="skill-section" class="skill-section">
+    <section id="skill-section" class="skill-section wow bounceInUp">
         <div class="container">
             <div class="section-title">
                 <h2>●Skill●</h2>
@@ -164,7 +166,7 @@
             </div>
         </div>
     </section>
-    <section id="code-examples" class="code-examples">
+    <section id="code-examples" class="code-examples wow bounceInUp">
         <div class="container">
             <div class="section-title">
                 <h2>●Code Examples●</h2>
@@ -236,7 +238,7 @@
             </div>
         </div>
     </section>
-    <section id="experience" class="experience">
+    <section id="experience" class="experience wow bounceInUp">
         <div class="container">
             <div class="section-title">
                 <h2>●Experience●</h2>
@@ -252,7 +254,7 @@
             </div>
         </div>
     </section>
-    <section id="education" class="education">
+    <section id="education" class="education wow bounceInUp">
         <div class="container">
             <div class="section-title">
                 <h2>●   Education●</h2>
@@ -265,7 +267,7 @@
             </div>
         </div>
     </section>
-    <section id="my-english" class="my-english">
+    <section id="my-english" class="my-english wow bounceInUp">
         <div class="container">
             <div class="section-title">
                 <h2>●My English●</h2>
@@ -289,3 +291,8 @@
         </div>
     </footer>
 </main>
+
+
+<script>new WOW().init();</script>
+</body>
+</html>
